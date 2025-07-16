@@ -1,7 +1,7 @@
 'use client'
 import { useState, type FC } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { GithubIcon, LinkedInIcon, WhatsappIcon } from '@/assets/icons';
 import SocialIcon from './social-icon';
 import Button from '../button';
@@ -83,8 +83,11 @@ const Navbar: FC<NavbarProps> = () => {
                 </div>
 
                 {isMobile && <NavbarMobile toggleContactForm={toggleContactForm} />}
-
-                {isContactOpen && <ContactForm handleCloseDialog={toggleContactForm} />}
+                <AnimatePresence>
+                    {isContactOpen &&
+                        <ContactForm handleCloseDialog={toggleContactForm} />
+                    }
+                </AnimatePresence>
             </section >
         </>
     );
