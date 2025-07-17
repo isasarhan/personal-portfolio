@@ -1,6 +1,6 @@
 'use client'
 import Spline from '@splinetool/react-spline';
-import type { FC } from 'react';
+import { Suspense, type FC } from 'react';
 import { motion } from 'framer-motion'
 
 interface HeroSectionProps { }
@@ -8,7 +8,7 @@ interface HeroSectionProps { }
 const HeroSection: FC<HeroSectionProps> = () => {
     return (
         <section className='h-screen relative w-screen  flex items-center flex-col justify-end  lg:flex-row md:justify-start'>
-            <div className='md:p-20 z-40 lg:w-3/5 flex flex-col gap-10 top-0 p-8'>
+            <div className='md:p-36 z-40 lg:w-4/6 flex flex-col gap-10 top-0 p-8'>
                 <motion.h1
                     className=' md:text-8xl text-5xl font-bold'
                     initial={{ opacity: 0, y: 80 }}
@@ -40,10 +40,12 @@ const HeroSection: FC<HeroSectionProps> = () => {
                 </motion.p>
             </div>
 
-            <Spline
-                className='absolute md:-right-[18%] -top-28 -z-50 md:top-0 '
-                scene="https://prod.spline.design/rlJrrsGpmE9xxPWE/scene.splinecode"
-            />
+            <Suspense fallback={null}>
+                <Spline
+                    className='absolute md:-right-[18%] -top-28 -z-50 md:top-0 '
+                    scene="https://prod.spline.design/rlJrrsGpmE9xxPWE/scene.splinecode"
+                />
+            </Suspense>
         </section>
     );
 }
