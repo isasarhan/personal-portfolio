@@ -36,7 +36,7 @@ const TechnologiesSection: FC<TechnologiesSectionProps> = () => {
     return (
         <section>
             <h2 ref={titleRef} className='text-6xl text-center font-bold '>Technologies</h2>
-            <div className="grid lg:grid-cols-7 grid-cols-3 justify-center p-10 mx-32 gap-15 items-center">
+            <div className="grid lg:grid-cols-7 grid-cols-2 justify-center p-10 lg:mx-32 gap-15 items-start mx-10 text-center">
                 {technologies.map(({ Icon, name }, index) => (
                     <motion.div
                         key={name}
