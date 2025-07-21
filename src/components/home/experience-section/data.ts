@@ -1,52 +1,66 @@
-import { WorkIcon, GraphQLIcon,  ExpressJsIcon, WordPressIcon} from "@/assets/icons";
+import { WorkIcon, GraphQLIcon, ExpressJsIcon, WordPressIcon } from "@/assets/icons";
 
 export const data = [
   {
+    id: '1',
     title: "Full-Stack Software Developer",
     details:
-      "Led the migration of websites and complex dashboards to Next.js 15 using TypeScript. Rewrote a dashboard builder from Vite 2.3, collaborated on upgrading microservices with TypeGraphQL and Node.js, and implemented mono-repo architecture. Refactored legacy codebases and resolved production bugs. Worked with MongoDB Inc. experts on query optimization, indexing, and Atlas Search.",
+      "Migrated dashboards to Next.js 15 with TypeScript. Rebuilt a dashboard builder, helped upgrade microservices using TypeGraphQL and Node.js, and improved performance with MongoDB experts.",
     location: "EST (YorkPress), Zouk Mosbeh, Lebanon",
     date: "Sep 2024 – Present",
     Icon: GraphQLIcon,
+    iconColor: '#F6009C',
+    technologies: ['Next.js', 'TypeScript', 'GraphQL', 'TypeGraphQL', 'Node.js', 'MongoDB']
   },
   {
+    id: '2',
     title: "Full-Stack Software Developer",
     details:
-      "Built a secure and scalable full-stack system for a jewelry manufacturer. Designed MongoDB schemas, built Express.js APIs with RBAC and JWT, then migrated to NestJS. Created a role-specific admin dashboard using Next.js, TypeScript, and Tailwind CSS to manage invoices, stock, employees, and payments.",
+      "Built a secure full-stack system with Express.js and NestJS. Designed MongoDB schemas and created a role-based admin dashboard using Next.js and Tailwind CSS.",
     location: "Serhan & Sons, Beirut, Lebanon",
     date: "Jan 2023 – Sep 2024",
     Icon: ExpressJsIcon,
+    iconColor: '#333333',
+    technologies: ['Next.js', 'TypeScript', 'Express.js', 'NestJS', 'MongoDB', 'Tailwind', 'JWT']
   },
   {
+    id: '3',
     title: "WordPress Developer (Part-Time)",
     details:
-      "Developed custom Elementor widgets and integrated the Nafath API for regulatory compliance. Built websites across real estate, tourism, events, and architecture niches. Managed hosting, domain, and 100GB+ email migrations.",
+      "Built custom Elementor widgets, integrated Nafath API, and delivered websites for various industries. Handled hosting and large email migrations.",
     location: "Double Seven Agency, Remote – Jeddah, Saudi Arabia",
     date: "Sep 2023 – Feb 2024",
     Icon: WordPressIcon,
+    technologies: ['WordPress', 'Elementor', 'PHP', 'Nafath API', 'cPanel']
   },
   {
+    id: '4',
     title: "WordPress Developer (Freelancer)",
     details:
-      "Delivered 4 e-commerce sites and customized 6 others using Elementor Pro, CF7, and appointment plugins. Integrated PayPal and Stripe for secure payments and handled regular backups/security checks for 10 websites.",
+      "Delivered and customized e-commerce sites with Elementor Pro and plugins. Integrated Stripe/PayPal and maintained 10 client sites.",
     location: "Blue-Boost, Remote – Beirut, Lebanon",
     date: "Aug 2022 – May 2023",
     Icon: WordPressIcon,
+    technologies: ['WordPress', 'Elementor Pro', 'WooCommerce', 'Stripe', 'PayPal', 'Security']
   },
   {
+    id: '5',
     title: "WordPress Developer (Part-Time)",
     details:
-      "Developed academic, marketing, and marble websites end-to-end and implemented feature improvements on existing projects.",
+      "Built and improved websites for academic, marble, and marketing sectors.",
     location: "Scandster, Remote – Beirut, Lebanon",
     date: "Jan 2021 – Aug 2022",
     Icon: WordPressIcon,
+    technologies: ['WordPress', 'Elementor', 'ACF', 'SEO']
   },
   {
+    id: '6',
     title: "WordPress Developer (Part-Time)",
     details:
-      "Built 4 e-commerce sites while collaborating remotely with a team of 7 developers. Collected client requirements, optimized SEO, and automated image sorting and renaming.",
+      "Developed e-commerce sites, optimized SEO, and automated image handling in a remote team setup.",
     location: "Rise Holding Group, Remote – Toronto, Canada",
     date: "Feb 2020 – Jul 2022",
     Icon: WordPressIcon,
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'SEO', 'ImageMagick', 'Git']
   },
 ];

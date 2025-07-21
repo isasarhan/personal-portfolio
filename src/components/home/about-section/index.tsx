@@ -8,15 +8,14 @@ interface AboutSectionProps { }
 
 const AboutSection: FC<AboutSectionProps> = () => {
     return (
-        <section className='md:px-36 md:pb-32 p-10' id='about'>
+        <section className='md:pb-32 ' id='about'>
             <div className="flex flex-col text-wrap lg:w-3/5 gap-5 mb-10">
                 <h3 className='text-2xl'>Introduction</h3>
                 <h1 className='text-7xl font-bold'>Overview</h1>
                 <p className='text-lg leading-8'>
-                    I'm a skilled software developer with experience in TypeScript and JavaScript,
-                    and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner
-                    and collaborate closely with clients to create efficient, scalable, and user-friendly
-                    solutions that solve real-world problems. Let's work together to bring your ideas to life!
+                    Full-Stack Developer skilled in Next.js, TypeScript, and GraphQL, currently at EST: YorkPress.
+                    Led migrations to Next.js 15, rebuilt complex dashboards, and contributed to microservices using TypeGraphQL.
+                    Also experienced in WordPress, supporting custom development, performance, and security updates.
                 </p>
             </div>
             <div className='grid lg:grid-cols-4 gap-5'>

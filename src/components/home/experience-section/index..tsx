@@ -12,11 +12,20 @@ const ExperienceSection: FC<ExperienceSectionProps> = () => {
 
     return (
         <section className='relative ' id="experiences">
-            <h2 className='text-6xl text-center font-bold mt-32 mb-5'>Experiences</h2>
+            <h2 className='text-6xl text-center font-bold mb-5'>Experiences</h2>
             <VerticalTimeline>
-                {data.map(({ Icon, date, details, location, title }) => (
-                    <ExperienceElement Icon={Icon} title={title} location={location} date={date}>
-                        {details}
+                {data.map(({ id, Icon, date, details, location, title, iconColor, technologies }, index) => (
+                    <ExperienceElement
+                        id={id}
+                        Icon={Icon}
+                        title={title}
+                        location={location}
+                        date={date}
+                        iconColor={iconColor}
+                        technologies={technologies}
+                        border={index % 2 !== 0}
+                        details={details}
+                    >
                     </ExperienceElement>
                 ))}
             </VerticalTimeline>

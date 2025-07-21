@@ -11,9 +11,6 @@ const HomeModule: FC<HomeModuleProps> = () => {
     return (
         <>
             <HeroSection />
-            <AboutSection/>
-            <TechnologiesSection/>
-            <ExperienceSection/>
             {/* <ProjectSection/> */}
         </>
     );

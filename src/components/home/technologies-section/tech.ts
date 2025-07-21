@@ -1,4 +1,4 @@
-import { CssIcon, DockerIcon, GitIcon, GraphQLIcon, HtmlIcon, JSIcon, MongodbIcon, NestJsIcon, NextJsIcon, NodeJsIcon, ReactIcon, TailwindIcon, ThreeJsIcon, TsIcon } from "@/assets/icons";
+import { CssIcon, DockerIcon, ExpressJsIcon, GitIcon, GraphQLIcon, HtmlIcon, JSIcon, MongodbIcon, NestJsIcon, NextJsIcon, NodeJsIcon, ReactIcon, TailwindIcon, ThreeJsIcon, TsIcon } from "@/assets/icons";
 
 export const technologies = [
     {
@@ -35,6 +35,11 @@ export const technologies = [
         name: "Node JS",
         Icon: NodeJsIcon,
         color: '#539E43'
+    },
+    {
+        name: "Express JS",
+        Icon: ExpressJsIcon,
+        color: '#333333'
     },
     {
         name: "MongoDB",

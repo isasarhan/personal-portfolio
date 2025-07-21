@@ -2,6 +2,8 @@
 import Spline from '@splinetool/react-spline';
 import { Suspense, type FC } from 'react';
 import { motion } from 'framer-motion'
+import Button from '../common/button';
+import { ArrowRightIcon } from '@/assets/icons';
 
 interface HeroSectionProps { }
 
@@ -38,6 +40,11 @@ const HeroSection: FC<HeroSectionProps> = () => {
                     Every project is backed by clean code, clear communication,
                     and a commitment to getting it done, on time, every time.
                 </motion.p>
+                <Button url='/about' 
+                    className='py-3 px-8 rounded-full border-2 border-white uppercase
+                 hover:bg-sky-800 transition-all ease-in-out duration-500 flex justify-between items-center gap-5'>
+                    About Me <ArrowRightIcon/>
+                </Button>
             </div>
 
             <Spline

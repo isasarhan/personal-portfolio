@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { GithubIcon, LinkedInIcon, WhatsappIcon } from '@/assets/icons';
 import SocialIcon from './social-icon';
 import Button from '../button';
-import { data } from '../data';
+import { data } from './data';
 import { useMediaQuery } from 'react-responsive';
 import NavbarMobile from './mobile';
 import ContactForm from './contact-form';
@@ -21,8 +21,7 @@ const Navbar: FC<NavbarProps> = () => {
     }
 
     return (
-        <>
-            <section className=' absolute flex items-center justify-between p-7 w-screen z-50 '>
+            <section className=' absolute flex items-center justify-between p-7 w-screen z-50 mb-10 top-0'>
                 {/* Logo and Name */}
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
@@ -39,7 +38,7 @@ const Navbar: FC<NavbarProps> = () => {
                       from-sky-900 to-sky-500 text-white shadow 
                         flex justify-center items-center'>I</div>
                     <div className='text-lg font-bold'>
-                        Issa Sarhan
+                       <Link href={'/'}>Issa Sarhan</Link>
                     </div>
                 </motion.div>
                 {/* Navigation links */}
@@ -89,7 +88,6 @@ const Navbar: FC<NavbarProps> = () => {
                     }
                 </AnimatePresence>
             </section >
-        </>
     );
 }
 

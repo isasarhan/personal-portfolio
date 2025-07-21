@@ -3,7 +3,7 @@ import { useState, type FC } from 'react';
 import Link from 'next/link';
 import SocialIcon from './social-icon';
 import Button from '../button';
-import { data } from '../data';
+import { data } from './data';
 import { motion } from 'framer-motion'
 import { GithubIcon, LinkedInIcon, MenuIcon, WhatsappIcon, XIcon } from '@/assets/icons';
 

@@ -5,7 +5,7 @@ export const data = [
     },
     {
         label: 'About',
-        url: '#about',
+        url: '/about',
     },
     {
         label: 'Projects',
@@ -13,7 +13,7 @@ export const data = [
     },
     {
         label: 'Experiences',
-        url: '#experiences',
+        url: '/experiences',
     },
     {
         label: 'Contact',
