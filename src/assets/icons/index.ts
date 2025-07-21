@@ -3,21 +3,22 @@ import { RiWhatsappFill as WhatsappIcon,RiTailwindCssFill as TailwindIcon , RiNe
 import { FaCss3Alt as CssIcon , FaDocker as DockerIcon, 
     FaGitAlt  as GitIcon, FaHtml5 as HtmlIcon,
     FaJs as JSIcon, FaNodeJs as NodeJsIcon, FaStar as StarIcon,
-    FaReact as ReactIcon, FaGlobe as GLobeIcon, FaWordpress as WordPressIcon, FaLaptopCode as WebDevIcon
+    FaReact as ReactIcon, FaGlobe as GLobeIcon, FaWordpress as WordPressIcon, 
+    FaLaptopCode as WebDevIcon, FaSuitcase as WorkIcon, FaSchool as SchoolIcon
 } from "react-icons/fa";
 import { BiSolidTerminal as TerminalIcon } from "react-icons/bi";
 
 import { SiMongodb as MongodbIcon, SiTypescript as TsIcon , 
-    SiNestjs as NestJsIcon, SiGraphql as GraphQLIcon, SiThreedotjs  as ThreeJsIcon
+    SiNestjs as NestJsIcon, SiGraphql as GraphQLIcon, SiThreedotjs  as ThreeJsIcon, SiExpress as ExpressJsIcon
  } from "react-icons/si";
 
  import { HiWindow as WindowIcon } from "react-icons/hi2";
 
 export {
-    GithubIcon, XIcon, LinkedInIcon, WhatsappIcon, MenuIcon, 
-    CssIcon, DockerIcon, GitIcon, HtmlIcon, JSIcon, MongodbIcon,
+    GithubIcon, XIcon, LinkedInIcon, WhatsappIcon, MenuIcon, WorkIcon,
+    CssIcon, DockerIcon, GitIcon, HtmlIcon, JSIcon, MongodbIcon,SchoolIcon,
     NodeJsIcon, ReactIcon, TailwindIcon, TsIcon, NextJsIcon, WordPressIcon,
     NestJsIcon, GraphQLIcon, ThreeJsIcon, StarIcon, GLobeIcon, TerminalIcon,
-    WebDevIcon, WindowIcon
+    WebDevIcon, WindowIcon, ExpressJsIcon
 }
     

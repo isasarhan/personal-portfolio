@@ -1,22 +1,22 @@
 export const data = [
     {
         label: 'Home',
-        url: '#',
+        url: '/',
     },
     {
         label: 'About',
-        url: '#',
+        url: '#about',
     },
     {
         label: 'Projects',
-        url: '#',
+        url: '#projects',
     },
     {
         label: 'Experiences',
-        url: '#',
+        url: '#experiences',
     },
     {
         label: 'Contact',
-        url: '#',
+        url: '#contact',
     },
 ]

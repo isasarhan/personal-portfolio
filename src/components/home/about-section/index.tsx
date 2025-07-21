@@ -8,7 +8,7 @@ interface AboutSectionProps { }
 
 const AboutSection: FC<AboutSectionProps> = () => {
     return (
-        <section className='md:px-36 md:pb-32 p-10'>
+        <section className='md:px-36 md:pb-32 p-10' id='about'>
             <div className="flex flex-col text-wrap lg:w-3/5 gap-5 mb-10">
                 <h3 className='text-2xl'>Introduction</h3>
                 <h1 className='text-7xl font-bold'>Overview</h1>

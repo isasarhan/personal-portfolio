@@ -40,10 +40,11 @@ const HeroSection: FC<HeroSectionProps> = () => {
                 </motion.p>
             </div>
 
-                <Spline
-                    className='absolute md:-right-[18%] -top-28 -z-50 md:top-0 '
-                    scene="https://prod.spline.design/rlJrrsGpmE9xxPWE/scene.splinecode"
-                />
+            <Spline
+                className='absolute md:-right-[18%] -top-28 -z-50 md:top-0 '
+                scene="https://prod.spline.design/rlJrrsGpmE9xxPWE/scene.splinecode"
+
+            />
         </section>
     );
 }

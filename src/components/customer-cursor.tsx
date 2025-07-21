@@ -58,6 +58,12 @@ const CustomerCursor: FC<CustomerCursorProps> = () => {
                 duration: 0.2
             })
         })
+        return () => {
+            ScrollTrigger.getAll().forEach((trigger) => {
+                // if (trigger.vars.trigger === sectionRef.current)
+                    trigger.kill()
+            })
+        }
     }, [])
 
     return (
