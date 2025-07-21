@@ -10,9 +10,10 @@ interface HeroSectionProps { }
 const HeroSection: FC<HeroSectionProps> = () => {
     return (
         <section className='h-screen relative w-screen  flex items-center flex-col justify-end  lg:flex-row md:justify-start'>
-            <div className='md:p-36 z-40 lg:w-4/6 flex flex-col gap-10 top-0 p-8'>
+            <div className='md:p-36 z-40 lg:w-4/6 flex flex-col gap-5 top-0 p-8'>
+                <h3 className='md:text-4xl text-3xl text-sky-300'>Hello I'm</h3>
                 <motion.h1
-                    className=' md:text-8xl text-5xl font-bold'
+                    className=' md:text-7xl text-5xl font-bold'
                     initial={{ opacity: 0, y: 80 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
@@ -23,7 +24,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
                         duration: 1.5
                     }}
                 >
-                    Building Fast Reliable Results
+                    Issa Sarhan <br /> Full Stack Developer
                 </motion.h1>
                 <motion.p className='text-lg text-sky-50 opacity-80'
                     initial={{ opacity: 0, y: 80 }}
@@ -40,16 +41,16 @@ const HeroSection: FC<HeroSectionProps> = () => {
                     Every project is backed by clean code, clear communication,
                     and a commitment to getting it done, on time, every time.
                 </motion.p>
-                <Button url='/about' 
+                <Button url='/about'
                     className='py-3 px-8 rounded-full border-2 border-white uppercase
                  hover:bg-sky-800 transition-all ease-in-out duration-500 flex justify-between items-center gap-5'>
-                    About Me <ArrowRightIcon/>
+                    About Me <ArrowRightIcon />
                 </Button>
             </div>
 
             <Spline
                 className='absolute md:-right-[18%] -top-28 -z-50 md:top-0 '
-                scene="https://prod.spline.design/rlJrrsGpmE9xxPWE/scene.splinecode"
+        scene="https://prod.spline.design/rlJrrsGpmE9xxPWE/scene.splinecode" 
 
             />
         </section>

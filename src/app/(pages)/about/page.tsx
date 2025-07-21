@@ -1,5 +1,5 @@
-import AboutSection from '@/components/home/about-section';
-import TechnologiesSection from '@/components/home/technologies-section';
+import AboutSection from '@/components/about';
+import TechnologiesSection from '@/components/technologies';
 import type { FC } from 'react';
 
 interface AboutPageProps { }

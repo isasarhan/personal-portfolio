@@ -4,6 +4,7 @@ import { useMemo, useRef, type FC } from 'react';
 import { motion } from 'framer-motion'
 import { technologies } from './tech';
 import { cn } from '@/lib/utils';
+import Title from '../common/title';
 interface TechnologiesSectionProps { }
 
 const TechnologiesSection: FC<TechnologiesSectionProps> = () => {
@@ -36,7 +37,7 @@ const TechnologiesSection: FC<TechnologiesSectionProps> = () => {
 
         return (
             <motion.div
-                key={name}
+                key={`${name}-${index}`}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -55,7 +56,7 @@ const TechnologiesSection: FC<TechnologiesSectionProps> = () => {
 
     return (
         <section id='technologies'>
-            <h2 className='text-6xl text-center font-bold '>Technologies</h2>
+            <Title text='Technologies'/>
             <div className="grid lg:grid-cols-7 grid-cols-2 justify-center p-10 lg:mx-32 gap-15 items-start mx-10 text-center">
                 {items}
             </div>

@@ -5,7 +5,7 @@ import { FaCss3Alt as CssIcon , FaDocker as DockerIcon,
     FaJs as JSIcon, FaNodeJs as NodeJsIcon, FaStar as StarIcon,
     FaReact as ReactIcon, FaGlobe as GLobeIcon, FaWordpress as WordPressIcon, 
     FaLaptopCode as WebDevIcon, FaSuitcase as WorkIcon, FaSchool as SchoolIcon,
-    FaArrowRight as ArrowRightIcon
+    FaArrowRight as ArrowRightIcon , FaUser as UserIcon, FaPhone as PhoneIcon, FaEnvelope as EmailIcon
 } from "react-icons/fa";
 import { BiSolidTerminal as TerminalIcon } from "react-icons/bi";
 
@@ -14,12 +14,14 @@ import { SiMongodb as MongodbIcon, SiTypescript as TsIcon ,
  } from "react-icons/si";
 
  import { HiWindow as WindowIcon } from "react-icons/hi2";
+import { FaMapLocationDot as MapsIcon} from "react-icons/fa6";
 
 export {
     GithubIcon, XIcon, LinkedInIcon, WhatsappIcon, MenuIcon, WorkIcon,
     CssIcon, DockerIcon, GitIcon, HtmlIcon, JSIcon, MongodbIcon,SchoolIcon,
     NodeJsIcon, ReactIcon, TailwindIcon, TsIcon, NextJsIcon, WordPressIcon,
     NestJsIcon, GraphQLIcon, ThreeJsIcon, StarIcon, GLobeIcon, TerminalIcon,
-    WebDevIcon, WindowIcon, ExpressJsIcon, ArrowRightIcon
+    WebDevIcon, WindowIcon, ExpressJsIcon, ArrowRightIcon, UserIcon,
+    PhoneIcon, EmailIcon, MapsIcon,
 }
     

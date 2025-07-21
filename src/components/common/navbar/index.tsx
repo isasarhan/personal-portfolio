@@ -8,7 +8,7 @@ import Button from '../button';
 import { data } from './data';
 import { useMediaQuery } from 'react-responsive';
 import NavbarMobile from './mobile';
-import ContactForm from './contact-form';
+import ContactFormDialog from './contact-form-dialog';
 
 interface NavbarProps { }
 
@@ -84,7 +84,7 @@ const Navbar: FC<NavbarProps> = () => {
                 {isMobile && <NavbarMobile toggleContactForm={toggleContactForm} />}
                 <AnimatePresence>
                     {isContactOpen &&
-                        <ContactForm handleCloseDialog={toggleContactForm} />
+                        <ContactFormDialog handleCloseDialog={toggleContactForm} />
                     }
                 </AnimatePresence>
             </section >

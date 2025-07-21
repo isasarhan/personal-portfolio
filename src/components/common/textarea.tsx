@@ -7,7 +7,7 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
     <textarea
       data-slot="textarea"
       className={cn(
-        "bg-white/30 w-full rounded-lg",
+        "bg-white/30 w-full rounded-lg p-4 overflow-hidden",
         className
       )}
       {...props}

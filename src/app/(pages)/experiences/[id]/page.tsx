@@ -1,4 +1,4 @@
-import ExperienceDetails from '@/components/home/experience-section/details';
+import ExperienceDetails from '@/components/experience/details';
 import type { FC } from 'react';
 
 interface ExperienceDetailsPageProps {
